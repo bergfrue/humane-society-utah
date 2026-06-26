@@ -1,0 +1,132 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+:root{
+    --primary:#3a7d44;
+    --accent:#f4a261;
+    --text:#333;
+    --light:#f9f9f9;
+
+    --heading-font:'Poppins', sans-serif;
+    --body-font:'Open Sans', sans-serif;
+}
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:var(--body-font);
+    color:var(--text);
+    line-height:1.6;
+}
+
+h1,h2,h3{
+    font-family:var(--heading-font);
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Header */
+
+header{
+    background:var(--primary);
+    color:white;
+    padding:1rem;
+}
+
+.logo{
+    width:80px;
+}
+
+#hamburger{
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+/* Navigation */
+
+#nav{
+    display:none;
+}
+
+#nav.nav-open{
+    display:block;
+}
+
+#nav ul{
+    list-style:none;
+}
+
+#nav li{
+    margin:.5rem 0;
+}
+
+#nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Main */
+
+main {
+    padding: 1rem;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    background:var(--accent);
+    color:white;
+    text-decoration:none;
+    padding:.75rem 1.5rem;
+    border-radius:5px;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:1rem;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:1rem;
+    margin-top:2rem;
+}
+
+/* Desktop Navigation */
+
+@media (min-width:900px){
+
+    #hamburger{
+        display:none;
+    }
+
+    #nav{
+        display:block;
+    }
+
+    #nav ul{
+        display:flex;
+        gap:2rem;
+    }
+
+}

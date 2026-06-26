@@ -1,0 +1,32 @@
+
+.home-hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: darkolivegreen;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+@media(min-width: 700px) {
+    .home-grid {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+#email-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.home-video {
+    width: 50%;
+    aspect-ratio: 16/9;
+    border: none;
+    padding: 1rem;
+}

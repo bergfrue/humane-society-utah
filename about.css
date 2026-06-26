@@ -1,0 +1,19 @@
+.about-section {
+    padding: 2rem;
+}
+
+.about-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.about-table th, .about-table td {
+    border: 1px solid #ccc;
+    padding: .75rem;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1rem;
+}
+

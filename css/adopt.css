@@ -1,0 +1,113 @@
+/*
+    Student Name: Tanner Fox
+    File Name: adopt.css
+*/
+
+/*
+    Hero Section
+*/
+
+.adopt-hero {
+    position: relative;
+}
+
+.adopt-hero img {
+    width: 100%;
+}
+
+.adopt-hero-text {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Desktop/tablet overlay */
+@media (min-width: 768px) {
+    .adopt-hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255,255,255,.8);
+        padding: 1em 2em;
+        border-radius: .5em;
+    }
+}
+
+/*
+    Filter Section
+*/
+
+.adopt-pet-filter {
+    text-align: center;
+}
+
+.adopt-filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.adopt-filter-btn {
+    padding: .75em 1.5em;
+    border: none;
+    border-radius: .4em;
+    cursor: pointer;
+    transition: transform .2s ease;
+}
+
+.adopt-filter-btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.adopt-filter-btn.active {
+    background: #3a7d44;
+    color: white;
+}
+
+/*
+    Pet Card Grid
+*/
+
+.adopt-pet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    gap: 1.5em;
+}
+
+.adopt-pet-card {
+    border-radius: .5em;
+    overflow: hidden;
+    box-shadow: 0 0 .5em rgba(0,0,0,.2);
+    background: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.adopt-pet-card img {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+
+/*
+    Pet Table
+*/
+
+.adopt-pet-table-section {
+    text-align: center;
+}
+
+.adopt-pet-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.adopt-pet-table th,
+.adopt-pet-table td {
+    padding: .75em;
+    border: 1px solid #ccc;
+}

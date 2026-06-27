@@ -1,0 +1,149 @@
+/*
+    Student Name: Tanner Fox
+    File Name: get-involved.css
+*/
+
+/*
+   Hero Section
+*/
+
+.gi-hero{
+    position:relative;
+}
+
+.gi-hero img{
+    width:100%;
+    display:block;
+}
+
+.gi-hero-text{
+    text-align:center;
+    padding:1em;
+}
+
+/* Desktop/Tablet Hero Overlay */
+
+@media (min-width:768px){
+
+    .gi-hero-text{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+
+        background:rgba(255,255,255,.85);
+        padding:1em 2em;
+        border-radius:.5em;
+    }
+
+}
+
+/*
+   Tab Buttons
+*/
+
+.gi-tab-buttons{
+    display:flex;
+    justify-content:center;
+    gap:1em;
+    flex-wrap:wrap;
+    margin:1.5em 0;
+}
+
+.gi-tab-btn{
+    padding:.75em 1.5em;
+    border:none;
+    border-radius:.4em;
+
+    cursor:pointer;
+
+    transition:transform .2s ease;
+}
+
+.gi-tab-btn:hover{
+    transform:scale(1.05);
+}
+
+.gi-tab-btn.active{
+    background:#3a7d44;
+    color:white;
+}
+
+/*
+   Panels
+*/
+
+.gi-panel{
+    display:none;
+    max-width:75em;
+    margin:auto;
+    padding:1em;
+}
+
+.gi-panel.active{
+    display:block;
+}
+
+.gi-panel img{
+    width:100%;
+    max-width:40em;
+
+    display:block;
+    margin:1em auto;
+}
+
+/*
+   Form
+*/
+
+.gi-form{
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+
+.gi-form label {
+    display: block;
+    margin-top: .75em;
+}
+
+.gi-form fieldset{
+    padding:1em;
+}
+
+.gi-form label{
+    display:block;
+    margin-top:.75em;
+}
+
+.gi-form input,
+.gi-form select,
+.gi-form textarea{
+    width:100%;
+    padding:.5em;
+    box-sizing:border-box;
+}
+
+.gi-form input[type="checkbox"] + label,
+.gi-form input[type="radio"] + label {
+    display: inline;
+    margin-left: .3em;
+}
+
+.gi-form textarea{
+    resize:vertical;
+}
+
+.gi-form input[type="checkbox"],
+.gi-form input[type="radio"]{
+    width:auto;
+}
+
+/*
+   Audio
+ */
+
+.gi-panel audio{
+    width:100%;
+    margin-top:1em;
+}

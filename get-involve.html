@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Tanner Fox
+    File Name: get-involved.html
+-->
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Humane Society Utah</title>
+
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/get-involved.css">
+        <script src="js/main.js" defer></script>
+        <script src="js/get-involved.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+            <button id="hamburger" aria-expanded="false">☰</button>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="adopt.html">Adopt</a></li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section class="gi-hero">
+
+                <img src="images/gi-hero.jpg" alt="A group of volunteers walking dogs">
+
+                <div class="gi-hero-text">
+
+                    <h1>Make a Difference</h1>
+                    <p>Get involved at your local Humane Society today</p>
+
+                </div>
+
+            </section>
+
+            <nav class="gi-tab-buttons">
+
+            <button class="gi-tab-btn active" data-panel="volunteer">Volunteer</button>
+            <button class="gi-tab-btn" data-panel="foster">Foster</button>
+            <button class="gi-tab-btn" data-panel="donate">Donate</button>
+
+            </nav>
+
+            <section class="gi-panel active" id="volunteer">
+
+                <img src="images/gi-volunteer.jpg" alt="A picture of a volunteer holding a puppy">
+                <h2>Volunteer</h2>
+                <p>Volunteers help provide care, enrichment, and companionship for animals while they wait for their forever homes.</p>
+                <p>Complete the application below to get started.</p>
+
+                <form class="gi-form">
+
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" required>
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" required>
+
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                        
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                    </fieldset>
+
+                    <fieldset class="gi-panel-information">
+                        <legend>Volunteer Information</legend>
+
+                        <label for="interest">Interest</label>
+                        <select id="interest" name="interest" required>
+                            <option value="" selected disabled>Select an option</option>
+                            <option value="dogwalking">Dog Walking</option>
+                            <option value="catcare">Cat Care</option>
+                            <option value="events">Events</option>
+                            <option value="fundraising">Fundraising</option>
+                        </select>
+
+                        <p>Days Available:</p>
+
+                        <input type="checkbox" id="weekdays" name="days" value="Weekdays">
+                        <label for="weekdays">Weekdays</label><br>
+
+                        <input type="checkbox" id="evenings" name="days" value="Evenings">
+                        <label for="evenings">Evenings</label><br>
+
+                        <input type="checkbox" id="weekends" name="days" value="Weekends">
+                        <label for="weekends">Weekends</label>
+
+                        <p>Experience:</p>
+
+                        <input type="radio" id="none" name="experience" value="none" required>
+                        <label for="none">None</label><br>
+                        
+                        <input type="radio" id="some" name="experience" value="some">
+                        <label for="some">Some Experience</label><br>
+
+                        <input type="radio" id="lots" name="experience" value="lots">
+                        <label for="lots">Extensive Experience</label><br>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Optional message"></textarea><br>
+
+                        <input type="checkbox" id="ageConfirm" name="ageConfirm" required>
+                        <label for="ageConfirm">I confirm that I am at least 18 years old.</label>
+
+                    </fieldset>
+                    
+                    <input type="submit" value="Submit Application">
+
+                </form>
+
+                <h2>Volunteer Testimonial</h2>
+                <audio controls>
+
+                <source src="media/Volunteer Testimonial.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+
+                </audio>
+            </section>
+
+            <section class="gi-panel" id="foster">
+
+                <img src="images/gi-foster.jpg" alt="A picture of a dog leaning out of a car window">
+
+                <h2>Foster a Pet</h2>
+                <p>Being a foster parent is fun and rewarding.</p>
+                <p>Foster families provide temporary homes for animals while they recover, grow, or wait for their forever families.</p>
+                <p>Every foster home gives another animal the chance to receive the care and attention they deserve.</p>
+
+                <h3>Why Foster?</h3>
+
+                <ul>
+                    <li>Provide a safe temporary home.</li>
+                    <li>Help animals adjust to family life.</li>
+                    <li>Support pets recovering from illness or injury.</li>
+                    <li>Create space in the shelter for new rescues.</li>
+                </ul>
+
+                <p><strong>Ready to open your home?</strong> <a href="contact.html">Contact us</a> to learn more about becoming a foster family</p>
+
+            </section>
+
+            <section class="gi-panel" id="donate">
+
+                <img src="images/gi-donate.jpg" alt="A picture of teenagers sorting donated pet toys and blankets">
+
+                <h2>Donate</h2>
+                <p>Your support helps provide food, shelter, and medical care for animals in need.</p>
+                <p>Every donation helps provide food, medical care, shelter, and enrichment for animals waiting to find their forever homes.</p>
+                <p>Whether you donate money or supplies, every contribution makes a difference.</p>
+
+                <h3>Ways You Can Help</h3>
+
+                <ul>
+                    <li>Monetary donations.</li>
+                    <li>Pet food and treats.</li>
+                    <li>Blankets and towels.</li>
+                    <li>Toys and enrichment supplies.</li>
+                </ul>
+
+                <p><strong>Every donation matters.</strong> Your generosity helps provide brighter futures for animals in need.</p>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Humane Society Utah - Class Project</p>
+        </footer>
+
+    </body>
+
+</html>

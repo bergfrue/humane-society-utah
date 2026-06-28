@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+    Student Name: Sapana Gautam
+    File Name: contact.html
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humane Society Utah</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/contact.css">
+<script src="js/main.js" defer></script>
+<script src="js/contact.js" defer></script>
+</head>
+<body>
+
+<header>
+<img src="images/logo.jpg" alt="Logo" class="logo">
+<button id="hamburger" aria-expanded="false">☰</button>
+<nav id="nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="adopt.html">Adopt</a></li>
+<li><a href="get-involved.html">Get Involved</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section class="contact-hero">
+<img src="images/contact-hero.jpg" alt="Front of the Humane Society Utah shelter">
+<h1>Contact Us</h1>
+</section>
+
+<section class="contact-form-section">
+<h2>Send Us a Message</h2>
+<form id="contact-form">
+<label for="contact-name">Name</label>
+<input type="text" id="contact-name" name="name" placeholder="Your name" required>
+
+<label for="contact-email">Email</label>
+<input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+
+<label for="contact-subject">Subject</label>
+<select id="contact-subject" name="subject" required>
+<option value="">-- Select a topic --</option>
+<option value="adoption">Adoption</option>
+<option value="volunteer">Volunteer / Foster</option>
+<option value="donation">Donations</option>
+<option value="lost-found">Lost & Found</option>
+<option value="general">General Question</option>
+</select>
+
+<label for="contact-message">Message</label>
+<textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+<button type="submit">Send Message</button>
+<p id="contact-confirm"></p>
+</form>
+</section>
+
+<section class="contact-info-section">
+<h2>Hours & Location</h2>
+
+<table class="contact-table">
+<thead>
+<tr>
+<th>Day</th>
+<th>Hours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday - Friday</td>
+<td>11:00 AM - 7:00 PM</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>10:00 AM - 6:00 PM</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>12:00 PM - 5:00 PM</td>
+</tr>
+<tr>
+<td>Major Holidays</td>
+<td>Closed</td>
+</tr>
+</tbody>
+</table>
+
+<table class="contact-table">
+<tbody>
+<tr>
+<td><strong>Address</strong></td>
+<td>4242 S 300 W, Murray, UT 84107</td>
+</tr>
+<tr>
+<td><strong>Phone</strong></td>
+<td>+1435*******</td>
+</tr>
+<tr>
+<td><strong>Email</strong></td>
+<td>humanesocietyamazes.org</td><
+</tr>
+</tbody>
+</table>
+</section>
+
+<section class="contact-directions-section">
+<button id="directions-btn">Directions & Parking</button>
+<div id="directions-panel" class="contact-directions-panel">
+<h3>Getting Here</h3>
+<p>By air, by foot or by four/two wheels even by balloon </p>
+<h3>Parking</h3>
+<p>No worries on parking.</p>
+</div>
+</section>
+
+<section class="contact-map-section">
+<h2>Find Us</h2>
+<iframe
+title="Map showing Humane Society Utah location"
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.8!2d-111.898!3d40.655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752813b8d419ee1%3A0x5e0dce3de4eb6fad!2s4242%20S%20300%20W%2C%20Murray%2C%20UT%2084107!5e0!3m2!1sen!2sus!4v1625000000000!5m2!1sen!2sus"
+width="100%"
+height="350"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Humane Society Utah - Class Project</p>
+</footer>
+
+</body>
+</html>

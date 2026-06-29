@@ -86,7 +86,7 @@
     background-color: white;
 }
 
-.faq-answer.open {
+.faq-answer.is-open {
     display: block;
 }
 
